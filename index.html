@@ -1,384 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sitio web de Javier Bullrich">
+	<meta name="author"      content="Javier Bullrich">
+	<meta name="theme-color" content="#DAD5BF">
+    <link rel="icon" sizes="16x16" href="assets/images/favicon.ico">
+	
+	<title>Javier Bullrich</title>
 
-    <title>Javyer</title>
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+	
+	<!-- Bootstrap itself -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/magister.css">
 
-    <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
+<body class="theme-invert">
+
+<nav class="mainmenu">
+	<div class="container">
+		<div class="dropdown">
+			<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				<li><a href="#head" class="active">Inicio</a></li>
+				<li><a href="#about">Sobre mi</a></li>
+				<!--li><a href="#themes">Themes</a></li-->
+				<li><a href="#contact">Contacto</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
 
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- Main (Home) section -->
+<section class="section" id="head">
+	<div class="container">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
 
-    <script src="assets/js/modernizr.js"></script>
-  </head>
+				<!-- Site Title, your name, HELLO msg, etc. -->
+				<h1 class="title">Javier Bullrich</h1>
+				<h2 class="subtitle">Sitio personal</h2>
 
-  <body>
+				<!-- Short introductory (optional) -->
+				<h3 class="tagline">
+					Elija a que secci&oacute;n desea acceder<br>
+				</h3>
+				
+				<!-- Nice place to describe your site in a sentence or two -->
+				<p><a href="./gameDev/" class="btn btn-default btn-lg">Game Dev</a>
+				<a href="./escritura/" class="btn btn-default btn-lg">Blog</a></p>
+				<p><a href="./curriculum/index.html" class="btn btn-default btn-lg">Curriculum Vitae</a></p>
+	
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	
+	</div>
+</section>
 
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">JAVYER</a>
-        </div>
-        <div class="navbar-collapse collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="games.html">GAMES</a></li>
-                <li><a href="bartender.html">BARTENDER</a></li>
-                <li><a href="pen_and_pencil.html">PEN AND PENCIL</a></li>
-                <!--li><a href="single-project.html">SINGLE PROJECT</a></li-->
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
+<!-- Second (About) section -->
+<section class="section" id="about">
+	<div class="container">
+	
+		<h2 class="text-center title">Sobre mi</h2>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">    
+				<h5><strong>Un poco sobre mi<br></strong></h5>
+				<p>Soy Javier, tengo <label id="edad">23</label> años y soy desarrollador de videojuegos freelance, bartender y game designer<br>
+				Actualmente estudio Desarrollo de videojuegos y Licenciatura en Artes de la Escritura.</p>    
+			</div>
+			<!--div class="col-sm-4">
+				<h5><strong>More, more lipsum!<br></strong></h5>    
+				<p>Tempore, eos, voluptatem minus commodi error aut eaque neque consequuntur optio nesciunt quod quibusdam. Ipsum, voluptatibus, totam, modi perspiciatis repudiandae odio ad possimus molestias culpa optio eaque itaque dicta quod cupiditate reiciendis illo illum aspernatur ducimus praesentium quae porro alias repellat quasi cum fugiat accusamus molestiae exercitationem amet fugit sint eligendi omnis adipisci corrupti. Aspernatur.</p>    
+				<h5><strong>Author links<br></strong></h5>    
+				<p><a href="http://be.net/pozhilov9409">Behance</a> / <a href="https://twitter.com/serggg">Twitter</a> / <a href="http://linkedin.com/pozhilov">LinkedIn</a> / <a href="https://www.facebook.com/pozhilov">Facebook</a></p>
+			</div-->
+		</div>
+	</div>
+</section>
 
-	<!-- *****************************************************************************************************************
-	 HEADERWRAP
-	 ***************************************************************************************************************** -->
-	<div id="headerwrap">
-	    <div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<h3>Game Developer - Bartender</h3>
-					<h1>Javier Bullrich</h1>
-					<h5>Fun solutions for creative problems</h5>
-					<!--h5>More Lorem Ipsum added here too.</h5-->
+<!-- Third (Works) section -->
+<!--section class="section" id="themes">
+	<div class="container">
+	
+		<h2 class="text-center title">More Themes</h2>
+		<p class="lead text-center">
+			Huge thank you to all people who publish<br>
+			their photos at <a href="http://unsplash.com">Unsplash</a>, thank you guys!
+		</p>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/screenshots/sshot1.jpg" alt="">
+					<div class="caption">
+						<h3>Thumbnail label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
 				</div>
-				<div class="col-lg-8 col-lg-offset-2 himg">
-					<img src="assets/img/BSM_fondo.jpg" class="img-responsive">
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="assets/screenshots/sshot4.jpg" alt="">
+					<div class="caption">
+						<h3>Thumbnail label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
 				</div>
-			</div><!-- /row -->
-	    </div> <!-- /container -->
-	</div><!-- /headerwrap -->
+			</div>
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/screenshots/sshot5.jpg" alt="">
+					<div class="caption">
+						<h3>Thumbnail label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="assets/screenshots/sshot3.jpg" alt="">
+					<div class="caption">
+						<h3>Thumbnail label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
 
-	<!-- *****************************************************************************************************************
-	 SERVICE LOGOS
-	 ***************************************************************************************************************** -->
-	 <div id="service">
-	 	<div class="container">
- 			<div class="row centered">
- 				<div class="col-md-4">
- 					<i class="fa fa-gamepad"></i>
- 					<h4>Game Developer</h4>
- 					<p>I have a degree in Game Design and I'm currently studing Game Development. I have a couple of games.</p>
-           <p>Find my CV and my published games here!</p>
- 					<p><br/><a href="games.html" class="btn btn-theme">More Info</a></p>
- 				</div>
- 				<div class="col-md-4">
- 					<i class="fa fa-glass"></i>
- 					<h4>Master Bartender</h4>
- 					<p>I'm a Bartender, Barmanager and much more! I know a lot about alcohol. Check here for more information!</p>
- 					<p><br/><a href="bartender.html" class="btn btn-theme">More Info</a></p>
- 				</div>
- 				<div class="col-md-4">
- 					<i class="fa fa-pencil"></i>
- 					<h4>Manga Artist</h4>
- 					<p>I have been drawing for two years by now, here is a collection of my work</p>
- 					<p><br/><a href="pen_and_pencil.html" class="btn btn-theme">More Info</a></p>
- 				</div>
-	 		</div>
-	 	</div><! --/container -->
-	 </div><! --/service -->
+		</div>
 
-	<!-- *****************************************************************************************************************
-	 PORTFOLIO SECTION
-	 ***************************************************************************************************************** -->
-	 <div id="portfoliowrap">
-        <h3>LATEST WORKS</h3>
+	</div>
+</section-->
 
-        <div class="portfolio-centered">
-            <div class="recentitems portfolio">
-				<div class="portfolio-item graphic-design">
-					<div class="he-wrap tpl6">
-					<img src="assets/img/portfolio/fly_thing.jpg" alt="">
-						<div class="he-view">
-							<div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">Fly Thing Fly</h3>
-                                <a data-rel="prettyPhoto" href="assets/img/portfolio/fly_thing.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="fly_thing_fly.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                        	</div><!-- he bg -->
-						</div><!-- he view -->
-					</div><!-- he wrap -->
-				</div><!-- end col-12 -->
+<!-- Fourth (Contact) section -->
+<section class="section" id="contact">
+	<div class="container">
+	
+		<h2 class="text-center title">Contactame</h2>
 
-                <div class="portfolio-item web-design">
-                    <div class="he-wrap tpl6">
-					<img src="assets/img/mother_love/mother_love_thumb.jpg" alt="">
-						<div class="he-view">
-							<div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">Mother Love</h3>
-                                <a data-rel="prettyPhoto" href="assets/img/mother_love/banner.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="mother_love.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                        	</div><!-- he bg -->
-						</div><!-- he view -->
-					</div><!-- he wrap -->
-				</div><!-- end col-12 -->
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				<p class="lead">¿Queres entrar en contacto conmigo?</p>
+				<p>Sentite libre de escribirme, mandarme un mail o twittearme</p>
+				<p><b><a href="mailto:javierbullrich@gmail.com?Subject=QuieroContactarte" target="_top">javierbullrich@gmail.com</a></b><br><br></p>
+				<ul class="list-inline list-social">
+					<li><a href="https://twitter.com/javierbullrich" class="btn btn-link" target="_blank"><i class="fa fa-twitter fa-fw"></i> Twitter</a></li>
+					<li><a href="https://github.com/bullrich" class="btn btn-link" target="_blank"><i class="fa fa-github fa-fw"></i> Github</a></li>
+					<li><a href="https://ar.linkedin.com/in/javibullrich" class="btn btn-link" target="_blank"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a></li>
+				</ul>
+			</div>
+		</div>
 
-                <div class="portfolio-item graphic-design">
-                    <div class="he-wrap tpl6">
-					<img src="assets/img/drawings/thumbs/13.jpg" alt="">
-						<div class="he-view">
-							<div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">Pen and Pencil - A collection of my drawings</h3>
-                                <a data-rel="prettyPhoto" href="assets/img/drawings/a13.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="pen_and_pencil.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                        	</div><!-- he bg -->
-						</div><!-- he view -->
-					</div><!-- he wrap -->
-				</div><!-- end col-12 -->
-
-                <div class="portfolio-item graphic-design">
-                    <div class="he-wrap tpl6">
-					<img src="assets/img/bartender/botellas_thumb.jpg" alt="">
-						<div class="he-view">
-							<div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">My bartender site</h3>
-                                <a data-rel="prettyPhoto" href="assets/img/contact_page.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="bartender.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                        	</div><!-- he bg -->
-						</div><!-- he view -->
-					</div><!-- he wrap -->
-				</div><!-- end col-12 -->
-
-                <div class="portfolio-item books">
-                    <div class="he-wrap tpl6">
-					<img src="assets/img/itchio.png" alt="">
-						<div class="he-view">
-							<div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">My Itch.io site</h3>
-                                <!--a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_05.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a-->
-                                <a href="http://javyer.itch.io/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                        	</div><!-- he bg -->
-						</div><!-- he view -->
-					</div><!-- he wrap -->
-				</div><!-- end col-12 -->
-
-            </div><!-- portfolio -->
-        </div><!-- portfolio container -->
-	 </div><!--/Portfoliowrap -->
+	</div>
+</section>
 
 
-	<!-- *****************************************************************************************************************
-	 MIDDLE CONTENT
-	 ***************************************************************************************************************** -->
-
-	 <div class="container mtb">
-	 	<div class="row">
-	 		<div class="col-lg-4 col-lg-offset-1">
-		 		<h4>More Info</h4>
-		 		<p>I'm a Game Developer, Bartender, Barmanager, Web Developer, Flair Artist, narcisist and a lot more!</p>
- 				<p><br/><a href="about.html" class="btn btn-theme">More Info</a></p>
-	 		</div>
-
-
-	 		<div class="col-lg-5 col-lg-offset-2">
-	 			<h4>Latest Posts</h4>
-	 			<div class="hline"></div>
-                <p><a href="mother_love.html">Mother Love</a></p>
-	 			<p><a href="fly_thing_fly.html">Fly Thing Fly</a></p>
-	 			<p><a href="pen_and_pencil.html">Pen and Pencil</a></p>
-	 			<p><a href="bartender.html">Bartender</a></p>
-	 		</div>
-
-	 	</div><! --/row -->
-	 </div><! --/container -->
-
-	<!-- *****************************************************************************************************************
-	 TESTIMONIALS
-	 ***************************************************************************************************************** -->
-	 <div id="twrap">
-	 	<div class="container centered">
-	 		<div class="row">
-	 			<div class="col-lg-8 col-lg-offset-2">
-	 			<i class="fa fa-comment-o"></i>
-	 			<p>The game designer shouldn't be making a world in which the player is just a small part.</p><p>The player's the boss; it's your duty to entertain him or her.
-	 			<h4><br/>John Carmack</h4>
-	 			</div>
-	 		</div><! --/row -->
-	 	</div><! --/container -->
-	 </div><! --/twrap -->
-
-	<!-- *****************************************************************************************************************
-	 OUR CLIENTS
-	 ***************************************************************************************************************** -->
-	 <!--div id="cwrap">
-		 <div class="container">
-		 	<div class="row centered">
-			 	<h3>My favorites!</h3>
-			 	<div class="col-lg-6 col-md-6 col-sm-6 col-md-offset-1">
-			 		<img src="assets/img/clients/haxeflixel.png" class="img-responsive">
-			 	</div>
-			 	<div class="col-lg-4 col-md-6 col-sm-10">
-			 		<img src="assets/img/clients/imagecampus.png" class="img-responsive">
-			 	</div>
-		 	</div>
-		 </div>
-	 </div><! --/cwrap -->
-
-	<!-- *****************************************************************************************************************
-	 FOOTER
-	 ***************************************************************************************************************** -->
-	 <div id="footerwrap">
-	 	<div class="container">
-		 	<div class="row">
-		 		<div class="col-lg-4">
-		 			<h4>About</h4>
-		 			<div class="hline-w"></div>
-		 			<p>This is my website to show everyone that I live, although not enough</p>
-		 		</div>
-		 		<div class="col-lg-4">
-		 			<h4>Social Links</h4>
-		 			<div class="hline-w"></div>
-		 			<p>
-		 				<a href="#"><i class="fa fa-facebook"></i></a-->
-		 				<a href="https://twitter.com/JavierBullrich"><i class="fa fa-twitter"></i></a>
-		 				<a href="http://instagram.com/javifesser/"><i class="fa fa-instagram"></i></a>
-                        <a href="http://steamcommunity.com/id/Javyer/"><i class="fa fa-steam"></i></a>
-                        <a href="https://github.com/Bullrich"><i class="fa fa-github"></i></a>
-                        <a href="https://www.youtube.com/channel/UC3CiDuCPHwYvu7OggmBeWkA"><i class="fa fa-youtube"></i></a>
-                        <a href="http://javifesser.deviantart.com/"><i class="fa fa-deviantart"></i></a>
-                        <a href="http://stackoverflow.com/users/4330018/javier-bullrich"><i class="fa fa-stack-overflow "></i></a>
-		 				<a href="http://bullrich.tumblr.com/"><i class="fa fa-tumblr"></i></a>
-		 				<a href="https://bitbucket.org/Javyer"><i class="fa fa-bitbucket"></i></a>
-		 			</p>
-		 		</div>
-		 		<div class="col-lg-4">
-		 			<h4>My Bunker</h4>
-		 			<div class="hline-w"></div>
-		 			<p>
-		 				Buenos Aires, Argentina<br/>
-		 			</p>
-		 		</div>
-
-		 	</div><! --/row -->
-	 	</div><! --/container -->
-	 </div><! --/footerwrap -->
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/retina-1.1.0.js"></script>
-	<script src="assets/js/jquery.hoverdir.js"></script>
-	<script src="assets/js/jquery.hoverex.min.js"></script>
-	<script src="assets/js/jquery.prettyPhoto.js"></script>
-  	<script src="assets/js/jquery.isotope.min.js"></script>
-  	<script src="assets/js/custom.js"></script>
-
-
-    <script>
-// Portfolio
-(function($) {
-	"use strict";
-	var $container = $('.portfolio'),
-		$items = $container.find('.portfolio-item'),
-		portfolioLayout = 'fitRows';
-
-		if( $container.hasClass('portfolio-centered') ) {
-			portfolioLayout = 'masonry';
-		}
-
-		$container.isotope({
-			filter: '*',
-			animationEngine: 'best-available',
-			layoutMode: portfolioLayout,
-			animationOptions: {
-			duration: 750,
-			easing: 'linear',
-			queue: false
-		},
-		masonry: {
-		}
-		}, refreshWaypoints());
-
-		function refreshWaypoints() {
-			setTimeout(function() {
-			}, 1000);
-		}
-
-		$('nav.portfolio-filter ul a').on('click', function() {
-				var selector = $(this).attr('data-filter');
-				$container.isotope({ filter: selector }, refreshWaypoints());
-				$('nav.portfolio-filter ul a').removeClass('active');
-				$(this).addClass('active');
-				return false;
-		});
-
-		function getColumnNumber() {
-			var winWidth = $(window).width(),
-			columnNumber = 1;
-
-			if (winWidth > 1200) {
-				columnNumber = 5;
-			} else if (winWidth > 950) {
-				columnNumber = 4;
-			} else if (winWidth > 600) {
-				columnNumber = 3;
-			} else if (winWidth > 400) {
-				columnNumber = 2;
-			} else if (winWidth > 250) {
-				columnNumber = 1;
-			}
-				return columnNumber;
-			}
-
-			function setColumns() {
-				var winWidth = $(window).width(),
-				columnNumber = getColumnNumber(),
-				itemWidth = Math.floor(winWidth / columnNumber);
-
-				$container.find('.portfolio-item').each(function() {
-					$(this).css( {
-					width : itemWidth + 'px'
-				});
-			});
-		}
-
-		function setPortfolio() {
-			setColumns();
-			$container.isotope('reLayout');
-		}
-
-		$container.imagesLoaded(function () {
-			setPortfolio();
-		});
-
-		$(window).on('resize', function () {
-		setPortfolio();
-	});
-})(jQuery);
-</script>
-  </body>
+<!-- Load js libs only when the page is loaded. -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="assets/js/modernizr.custom.72241.js"></script>
+<script src="assets/js/jquery.backstretch.min.js"></script>
+<!-- Custom template scripts -->
+<script src="assets/js/magister.js"></script>
+<script type="text/javascript">
+        function getDate(dateString){
+            //var birthdate = new Date("1993/11/11");
+            var birthdate = new Date(dateString);
+            var cur = new Date();
+            var diff = cur-birthdate;
+            var age = Math.floor(diff/31536000000);
+            return age;
+        }
+        document.getElementById("edad").innerHTML = getDate("1993/11/11");
+		
+		$.backstretch([
+      "./assets/images/body4.jpg"
+	, "./assets/images/body1.jpg"
+	, "./assets/images/body2.jpg"
+	, "./assets/images/body5.jpg"
+	, "./assets/images/wallp1.jpg"
+    , "./assets/images/wallp2.jpg"
+  ], {duration: 9000, fade: 750});
+        </script>
+</body>
 </html>

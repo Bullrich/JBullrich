@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Argumentacion - Javier Bullrich</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    
+    <form class="form-horizontal" name="Argumentacion" method="POST" onsubmit="DisplayValue()" id="formularioArg">
+      <h1>Llene los campos para poder probar la argumentacion, el texto dentro de los corchetes sera remplazado por el que usted escriba.</h1>
+  <div class="form-group">
+    <label for="dato" class="col-sm-2 control-label">Dato</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="dato" placeholder="Obligatorio">
+      </div>
+  </div>
+  <div class="form-group">
+    <label for="conclusion" class="col-sm-2 control-label">Conclusion</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="conclusion" placeholder="Obligatorio">
+      </div>
+  </div>
+  <div class="form-group">
+    <label for="garantia" class="col-sm-2 control-label">Garantia</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="garantia" placeholder="Obligatorio">
+      </div>
+  </div>
+  <div class="form-group">
+    <label for="modalizador" class="col-sm-2 control-label">Modalizador</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="modalizador">
+      </div>
+  </div>
+  <div class="form-group">
+    <label for="respaldo" class="col-sm-2 control-label">Respaldo</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="respaldo">
+      </div>
+  </div>
+  <div class="form-group">
+    <label for="excepcion" class="col-sm-2 control-label">Excepcion</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="excepcion">
+      </div>
+  </div>
+  <button type="button" class="btn btn-default" onclick="DisplayValue()">Formar argumento</button>
+</form>
+  <h1 id="resultado"> <tag id="txtDato">[Dato]</tag> por tanto, <tag id="txtModalizador">[Modalizador], </tag><tag id="txtConclusion">[conclusion]</tag><tag id="txtExcepcion">,
+a menos que [excepcion]</tag>, porque <tag id="txtGarantia">[garantia]</tag><tag id="txtRespaldo">, teniendo en cuenta [respaldo]</tag></h1>
+<button type="button" class="btn btn-default" onclick="ShowTableAgain()" id="showAgain" style="display: none;">Probar de vuelta</button>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script type="text/javascript" language="javascript">
+    /*onload = function(){
+      document.Argumentacion.dato.focus();
+  }*/
+  function DisplayValue(){
+      if(document.Argumentacion.dato.value!=="" && document.Argumentacion.conclusion.value!=="" && document.Argumentacion.garantia.value!==""){
+          //alert("The value entered was \n" + document.Argumentacion.dato.value);
+          document.getElementById('txtDato').innerHTML = document.Argumentacion.dato.value;
+          document.getElementById('txtConclusion').innerHTML = document.Argumentacion.conclusion.value;
+          document.getElementById('txtGarantia').innerHTML = document.Argumentacion.garantia.value;
+          if(document.Argumentacion.modalizador.value!==""){
+            document.getElementById('txtModalizador').style.display = 'block';
+            document.getElementById('txtModalizador').innerHTML = document.Argumentacion.modalizador.value + ", ";
+          } else{
+            document.getElementById('txtModalizador').style.display = 'none';
+          }
+          
+          if(document.Argumentacion.excepcion.value!==""){
+            document.getElementById('txtExcepcion').style.display = 'block';
+            document.getElementById('txtExcepcion').innerHTML = ", a menos que " + document.Argumentacion.excepcion.value;
+          } else{
+            document.getElementById('txtExcepcion').style.display = 'none';
+          }
+          
+          if(document.Argumentacion.respaldo.value!==""){
+            document.getElementById('txtRespaldo').style.display = 'block';
+            document.getElementById('txtRespaldo').innerHTML = ", teniendo en cuenta " + document.Argumentacion.respaldo.value + ".";
+          } else{
+            document.getElementById('txtRespaldo').innerHTML = ".";
+          }
+          document.getElementById('formularioArg').style.display = 'none';
+          document.getElementById('showAgain').style.display = 'block';
+      }
+      else{
+          alert("¡Necesita poner un dato, una conclusion y una garantia!");
+      }
+      
+  }
+  function ShowTableAgain(){
+    document.getElementById('formularioArg').style.display = 'block';
+          document.getElementById('showAgain').style.display = 'none';
+  }
+    </script>
+  </body>
+</html>
